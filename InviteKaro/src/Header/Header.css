@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Poppins:wght@300;400;500;700&display=swap");
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: rgb(114, 114, 114);
+    position: sticky;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.right{
+
+}
+
+.mid ul li{
+ list-style: none;
+ padding: 0.5rem;
+
+}
+.mid ul{
+    display: flex;
+}
+
+.left{
+
+}
