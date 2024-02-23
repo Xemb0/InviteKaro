@@ -10,7 +10,8 @@ import Footer_img from '../assets/Footer/bg_Footer.png'
 function Footer() {
   return (
     <div>
-     <div className='Footer_box' style={{ backgroundImage: `url(${Footer_img})`, backgroundSize: 'contain' }}>
+<div className='Footer_box' style={{ backgroundImage: `url(${Footer_img})`, backgroundSize: '100% 100%' }}>
+
  
         <div className='Footer_col1'>
           <img src={logo} alt="Logo" className="footer-logo" />
