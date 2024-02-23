@@ -8,13 +8,19 @@
     background-color: #fff;
     color: rgb(114, 114, 114);
     position: sticky;
+    top: 0;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
     font-size: 1.2rem;
 }
+.toggle{
+    display: none;
+}
 
-.right{
 
+.left{
+ display: flex;
+ justify-content: space-between;
 }
 
 .mid ul li{
@@ -22,10 +28,75 @@
  padding: 0.5rem;
 
 }
+.mid ul li a{
+    text-decoration: none;
+    padding: 0.5rem;
+    margin:  0.5rem;
+    border-radius: 0.5rem;
+}
+
+.mid ul li a:hover{
+    background-color: #59d94d;
+    color: #fff;
+}
 .mid ul{
     display: flex;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
 }
 
-.left{
+.active{
+    background-color: #59d94d;
+    color: #fff;
+}
+.right{
+    display: flex;
+    align-items: flex-start;
+}
+
+.right ul li a{
+text-decoration: none;
+padding: 0.5rem;
+margin:  0.3rem;
+border-radius: 0.5rem;
 
 }
+
+.right ul li a:hover{
+    background-color: #59d94d;
+    color: #fff;
+}
+ .right ul li{
+    list-style: none;
+    margin: 0.3rem;
+    
+    
+ }
+
+ @media (max-width: 480px) {
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    .nav ul{ display: none;
+        flex-direction: column;
+
+        
+    }
+    .left{
+        width: 100%;
+    }
+
+    .nav ul.open {
+        display: flex;
+    }
+    .toggle{
+        display: flex;
+        
+        align-items: center;
+       
+    }
+    
+ }
