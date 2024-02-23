@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter as Router , Route, Routes} from "react-router-dom"
 import Header from './component/Header/Header'
 import Home from './Screen/Home/Home'
+import Footer from './component/Footer/Footer'
 
 
 
@@ -20,8 +21,8 @@ function App() {
         <Route path='/birthday' element={<Home/>}/>
         <Route path='/reception' element={<Home/>}/>
         <Route path='/all' element={<Home/>}/>
-
       </Routes>
+     <Footer/>
      </Router>
     
     </>
