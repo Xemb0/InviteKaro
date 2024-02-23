@@ -10,7 +10,12 @@ import Footer_img from '../assets/Footer/bg_Footer.png'
 function Footer() {
   return (
     <div>
-<div className='Footer_box' style={{ backgroundImage: `url(${Footer_img})`, backgroundSize: '100% 100%' }}>
+<div className='Footer_box' style={{ 
+  backgroundImage: `url(${Footer_img})`, 
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat'
+}}>
 
  
         <div className='Footer_col1'>
@@ -18,7 +23,13 @@ function Footer() {
           <p className='logo-name' style={{ fontFamily: 'YourSpecificFont, sans-serif', fontWeight: 'bold' ,fontSize: '2rem'}}>
   INVITE<span className='ai'>KARO</span>
 </p>
- <div className='Footer_row'>
+
+          <ul>
+            <h4 style={{fontSize: '2rem',fontWeight: 'bold',color: 'gray'}}>Contact Us</h4>
+            <li style={{color: 'GrayText'}}>Email: example@example.com</li>
+            <li  style={{color: 'GrayText'}}>Phone: +1 (123) 456-7890</li>
+          </ul>
+          <div className='Footer_row'>
         <div className="wrapper">
           <a href="https://www.facebook.com/" className="icon facebook" target="_blank" rel="noopener noreferrer">
             <div className="tooltip">Facebook</div>
@@ -38,12 +49,8 @@ function Footer() {
           </a>
         </div>
       </div>
-          <ul>
-            <h4 style={{fontSize: '2rem',fontWeight: 'bold',color: 'gray'}}>Contact Us</h4>
-            <li style={{color: 'GrayText'}}>Email: example@example.com</li>
-            <li  style={{color: 'GrayText'}}>Phone: +1 (123) 456-7890</li>
-          </ul>
         </div>
+        
 
         <div className='Footer_col3'>
         <ul style={{ fontWeight: 'bold', fontSize: '2rem',color: 'gray' }}>Quick Links</ul>
@@ -56,7 +63,7 @@ function Footer() {
         <div className='Footer_col2'>
         <h4 style={{ fontWeight: 'bold', fontSize: '2rem',color: 'gray' }}>About Us</h4>
 <p style={{ letterSpacing: '2px' ,wordSpacing: '7px',fontSize: '1.2rem'}}>
-"Welcome to InviteKaro, your premier destination for creating exquisite video invitations that elevate your special moments to unforgettable experiences. At [Company Name], we understand the significance of every celebration, whether it's a joyous wedding, a milestone birthday, a heartwarming baby shower, or any other cherished event. With our passion for creativity and dedication to excellence, we specialize in crafting personalized video invitations that reflect your unique style and capture the essence of your occasion. Let us help you transform your vision into a stunning reality, making your event truly memorable for you and your guests.
+Welcome to InviteKaro, where we create personalized video invitations to make your special moments unforgettable. With creativity and dedication, we'll capture the essence of your occasion, ensuring a truly memorable event for you and your guests.
 </p>
 
         </div>
